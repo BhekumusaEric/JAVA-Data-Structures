@@ -1,8 +1,10 @@
-import  java.util.ArrayList;
-import java.util.List;
-import  java.util.Scanner;
+package com.learnjava;
 
-public  class Main {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
 public static void main(String[] args) {
     List<String> names = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
