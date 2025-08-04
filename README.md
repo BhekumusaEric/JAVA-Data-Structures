@@ -15,14 +15,18 @@ Welcome to your Java learning journey! This Maven project is designed to help yo
 ```
 src/
 ├── main/java/com/learnjava/
-│   ├── Main.java           # Your original code (moved here)
-│   ├── MyArrayList.java    # Custom ArrayList implementation
-│   ├── MyStack.java        # Custom Stack implementation
-│   └── Calculator.java     # Calculator with various algorithms
+│   ├── Main.java                # Your original code (moved here)
+│   ├── MyArrayList.java         # Custom ArrayList implementation
+│   ├── MyStack.java             # Custom Stack implementation
+│   ├── Calculator.java          # Calculator with math algorithms
+│   ├── StringAlgorithms.java    # Classic string algorithms
+│   └── DataStructuresDemo.java  # Maps, Sets, and advanced collections
 └── test/java/com/learnjava/
-    ├── MyArrayListTest.java # Tests for MyArrayList
-    ├── MyStackTest.java     # Tests for MyStack
-    └── CalculatorTest.java  # Tests for Calculator
+    ├── MyArrayListTest.java       # Tests for MyArrayList (12 tests)
+    ├── MyStackTest.java           # Tests for MyStack (10 tests)
+    ├── CalculatorTest.java        # Tests for Calculator (19 tests)
+    ├── StringAlgorithmsTest.java  # Tests for StringAlgorithms (13 tests)
+    └── DataStructuresDemoTest.java # Tests for DataStructuresDemo (12 tests)
 ```
 
 ## 🚀 Getting Started
@@ -69,16 +73,40 @@ Move to `MyStack.java` - implement stack operations to make `MyStackTest.java` p
 - Exception handling for edge cases
 - Search algorithms
 
-### Phase 3: Calculator (Process Flow & Algorithms)
-Finally, implement `Calculator.java` to make `CalculatorTest.java` pass.
+### Phase 3: Calculator (Math Algorithms)
+Implement `Calculator.java` to make `CalculatorTest.java` pass.
 
 **Key Concepts:**
 - Basic arithmetic operations
-- Recursion (factorial)
+- Recursion (factorial, GCD)
 - Iteration (Fibonacci)
 - List processing (max, average)
 - Prime number checking
-- Exception handling
+- Perfect numbers
+- Number base conversion
+- Array algorithms
+
+### Phase 4: StringAlgorithms (Classic String Problems)
+Implement `StringAlgorithms.java` to make `StringAlgorithmsTest.java` pass.
+
+**Key Concepts:**
+- Palindrome checking
+- Anagram detection
+- String reversal
+- Character frequency counting
+- String compression
+- Pattern matching
+
+### Phase 5: DataStructuresDemo (Maps & Sets)
+Finally, implement `DataStructuresDemo.java` to make `DataStructuresDemoTest.java` pass.
+
+**Key Concepts:**
+- HashMap operations (Java's dictionary)
+- HashSet operations (unique collections)
+- Character/word frequency counting
+- Set operations (union, intersection)
+- Map sorting and grouping
+- Cache implementation
 
 ## 🔍 Key Java Concepts You'll Learn
 

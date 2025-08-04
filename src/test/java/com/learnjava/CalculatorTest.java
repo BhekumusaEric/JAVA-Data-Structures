@@ -161,7 +161,7 @@ public class CalculatorTest {
         assertThat(calculator.isPrime(11)).isTrue();
         assertThat(calculator.isPrime(13)).isTrue();
         assertThat(calculator.isPrime(17)).isTrue();
-        
+
         // Non-prime numbers
         assertThat(calculator.isPrime(1)).isFalse();
         assertThat(calculator.isPrime(4)).isFalse();
@@ -170,9 +170,75 @@ public class CalculatorTest {
         assertThat(calculator.isPrime(9)).isFalse();
         assertThat(calculator.isPrime(10)).isFalse();
         assertThat(calculator.isPrime(15)).isFalse();
-        
+
         // Edge cases
         assertThat(calculator.isPrime(0)).isFalse();
         assertThat(calculator.isPrime(-5)).isFalse();
+    }
+
+
+
+    @Test
+    @DisplayName("Should calculate GCD correctly")
+    void shouldCalculateGCD() {
+        assertThat(calculator.gcd(48, 18)).isEqualTo(6);
+        assertThat(calculator.gcd(56, 42)).isEqualTo(14);
+        assertThat(calculator.gcd(17, 13)).isEqualTo(1); // coprime numbers
+        assertThat(calculator.gcd(100, 25)).isEqualTo(25);
+        assertThat(calculator.gcd(7, 0)).isEqualTo(7);
+        assertThat(calculator.gcd(0, 5)).isEqualTo(5);
+    }
+
+    @Test
+    @DisplayName("Should check if number is perfect correctly")
+    void shouldCheckIfNumberIsPerfect() {
+        // Perfect numbers
+        assertThat(calculator.isPerfectNumber(6)).isTrue();   // 1 + 2 + 3 = 6
+        assertThat(calculator.isPerfectNumber(28)).isTrue();  // 1 + 2 + 4 + 7 + 14 = 28
+
+        // Non-perfect numbers
+        assertThat(calculator.isPerfectNumber(1)).isFalse();
+        assertThat(calculator.isPerfectNumber(8)).isFalse();
+        assertThat(calculator.isPerfectNumber(10)).isFalse();
+        assertThat(calculator.isPerfectNumber(12)).isFalse();
+
+        // Edge cases
+        assertThat(calculator.isPerfectNumber(0)).isFalse();
+        assertThat(calculator.isPerfectNumber(-6)).isFalse();
+    }
+
+    @Test
+    @DisplayName("Should convert decimal to binary correctly")
+    void shouldConvertDecimalToBinary() {
+        assertThat(calculator.decimalToBinary(0)).isEqualTo("0");
+        assertThat(calculator.decimalToBinary(1)).isEqualTo("1");
+        assertThat(calculator.decimalToBinary(2)).isEqualTo("10");
+        assertThat(calculator.decimalToBinary(5)).isEqualTo("101");
+        assertThat(calculator.decimalToBinary(8)).isEqualTo("1000");
+        assertThat(calculator.decimalToBinary(15)).isEqualTo("1111");
+        assertThat(calculator.decimalToBinary(255)).isEqualTo("11111111");
+    }
+
+    @Test
+    @DisplayName("Should find second largest number correctly")
+    void shouldFindSecondLargest() {
+        assertThat(calculator.findSecondLargest(new int[]{1, 2, 3, 4, 5})).isEqualTo(4);
+        assertThat(calculator.findSecondLargest(new int[]{5, 4, 3, 2, 1})).isEqualTo(4);
+        assertThat(calculator.findSecondLargest(new int[]{1, 5, 3, 2, 4})).isEqualTo(4);
+        assertThat(calculator.findSecondLargest(new int[]{10, 10, 5})).isEqualTo(5);
+        assertThat(calculator.findSecondLargest(new int[]{-1, -5, -3})).isEqualTo(-3);
+    }
+
+    @Test
+    @DisplayName("Should throw exception for invalid second largest input")
+    void shouldThrowExceptionForInvalidSecondLargestInput() {
+        assertThatThrownBy(() -> calculator.findSecondLargest(null))
+            .isInstanceOf(IllegalArgumentException.class);
+
+        assertThatThrownBy(() -> calculator.findSecondLargest(new int[]{}))
+            .isInstanceOf(IllegalArgumentException.class);
+
+        assertThatThrownBy(() -> calculator.findSecondLargest(new int[]{5}))
+            .isInstanceOf(IllegalArgumentException.class);
     }
 }

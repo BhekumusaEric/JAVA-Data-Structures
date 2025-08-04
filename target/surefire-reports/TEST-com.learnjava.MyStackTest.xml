@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.learnjava.MyStackTest" time="0.332" tests="10" errors="0" skipped="0" failures="10">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.learnjava.MyStackTest" time="0.073" tests="10" errors="0" skipped="0" failures="10">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/24.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/craftsman/practice/JAVA-Data-Structures/target/surefire/surefirebooter-20250804205627406_3.jar /Users/craftsman/practice/JAVA-Data-Structures/target/surefire 2025-08-04T20-56-25_268-jvmRun1 surefire-20250804205627406_1tmp surefire_0-20250804205627406_2tmp"/>
+    <property name="sun.java.command" value="/Users/craftsman/practice/JAVA-Data-Structures/target/surefire/surefirebooter-20250804211204728_3.jar /Users/craftsman/practice/JAVA-Data-Structures/target/surefire 2025-08-04T21-12-04_012-jvmRun1 surefire-20250804211204728_1tmp surefire_0-20250804211204728_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/craftsman/practice/JAVA-Data-Structures/target/test-classes:/Users/craftsman/practice/JAVA-Data-Structures/target/classes:/Users/craftsman/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/craftsman/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/craftsman/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/craftsman/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/craftsman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/craftsman/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/craftsman/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/craftsman/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/craftsman/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/craftsman/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/craftsman/practice/JAVA-Data-Structures/target/surefire/surefirebooter-20250804205627406_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/craftsman/practice/JAVA-Data-Structures/target/surefire/surefirebooter-20250804211204728_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="24.0.1"/>
@@ -58,7 +58,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="shouldPushItems" classname="com.learnjava.MyStackTest" time="0.219">
+  <testcase name="shouldPushItems" classname="com.learnjava.MyStackTest" time="0.003">
     <failure message="&#10;expected: 3&#10; but was: 0" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 
 expected: 3
@@ -137,7 +137,7 @@ expected: 3
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldThrowExceptionWhenPeekingAtEmptyStack" classname="com.learnjava.MyStackTest" time="0.004">
+  <testcase name="shouldThrowExceptionWhenPeekingAtEmptyStack" classname="com.learnjava.MyStackTest" time="0.049">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
@@ -213,7 +213,7 @@ Expecting code to raise a throwable.
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldPeekAtTopItem" classname="com.learnjava.MyStackTest" time="0.004">
+  <testcase name="shouldPeekAtTopItem" classname="com.learnjava.MyStackTest" time="0.001">
     <failure message="&#10;Expecting actual not to be null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting actual not to be null
@@ -289,7 +289,7 @@ Expecting actual not to be null
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldMaintainCorrectSize" classname="com.learnjava.MyStackTest" time="0.002">
+  <testcase name="shouldMaintainCorrectSize" classname="com.learnjava.MyStackTest" time="0.001">
     <failure message="&#10;expected: 1&#10; but was: 0" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 
 expected: 1
@@ -368,7 +368,7 @@ expected: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldThrowExceptionWhenPoppingFromEmptyStack" classname="com.learnjava.MyStackTest" time="0.002">
+  <testcase name="shouldThrowExceptionWhenPoppingFromEmptyStack" classname="com.learnjava.MyStackTest" time="0.001">
     <failure message="&#10;Expecting code to raise a throwable." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting code to raise a throwable.
@@ -444,7 +444,7 @@ Expecting code to raise a throwable.
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldHandleNullValues" classname="com.learnjava.MyStackTest" time="0.008">
+  <testcase name="shouldHandleNullValues" classname="com.learnjava.MyStackTest" time="0.001">
     <failure message="&#10;expected: &quot;AlsoNotNull&quot;&#10; but was: null" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 
 expected: "AlsoNotNull"
@@ -602,7 +602,7 @@ expected: "Third"
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldSearchForItems" classname="com.learnjava.MyStackTest" time="0.002">
+  <testcase name="shouldSearchForItems" classname="com.learnjava.MyStackTest" time="0.001">
     <failure message="&#10;expected: 1&#10; but was: -1" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 
 expected: 1
@@ -681,7 +681,7 @@ expected: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="shouldCreateEmptyStack" classname="com.learnjava.MyStackTest" time="0.004">
+  <testcase name="shouldCreateEmptyStack" classname="com.learnjava.MyStackTest" time="0.001">
     <failure message="&#10;Expecting value to be true but was false" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 
 Expecting value to be true but was false

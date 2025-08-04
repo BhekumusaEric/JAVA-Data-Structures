@@ -114,52 +114,7 @@ public class Calculator {
         return false;
     }
 
-    /**
-     * Checks if a string is a palindrome (reads the same forwards and backwards)
-     * @param str the string to check
-     * @return true if the string is a palindrome, false otherwise
-     */
-    public boolean isPalindrome(String str) {
-        // TODO: Implement this method
-        // Hint: Compare characters from start and end moving towards center
-        // Consider ignoring case and spaces for a more robust solution
-        return false;
-    }
 
-    /**
-     * Checks if two strings are anagrams (contain the same characters in different order)
-     * @param str1 first string
-     * @param str2 second string
-     * @return true if the strings are anagrams, false otherwise
-     */
-    public boolean areAnagrams(String str1, String str2) {
-        // TODO: Implement this method
-        // Hint: Sort the characters in both strings and compare
-        // Or count frequency of each character
-        return false;
-    }
-
-    /**
-     * Reverses a string
-     * @param str the string to reverse
-     * @return the reversed string
-     */
-    public String reverseString(String str) {
-        // TODO: Implement this method
-        // Hint: Use StringBuilder or iterate backwards
-        return null;
-    }
-
-    /**
-     * Counts the number of vowels in a string
-     * @param str the string to analyze
-     * @return the number of vowels (a, e, i, o, u)
-     */
-    public int countVowels(String str) {
-        // TODO: Implement this method
-        // Hint: Check each character against vowels (consider both cases)
-        return 0;
-    }
 
     /**
      * Finds the greatest common divisor (GCD) of two numbers using Euclidean algorithm
