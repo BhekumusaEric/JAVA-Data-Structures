@@ -1,0 +1,92 @@
+{
+    // Performance Optimizations
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/bower_components/**": true,
+        "**/dist/**": true,
+        "**/target/**": true,
+        "**/.metadata/**": true,
+        "**/.gradle/**": true,
+        "**/.m2/**": true
+    },
+    
+    // Disable unnecessary features for speed
+    "telemetry.telemetryLevel": "off",
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    
+    // Editor performance
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": false,
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false,
+    "editor.codeLens": false,
+    "editor.folding": false,
+    "editor.foldingHighlight": false,
+    "editor.showFoldingControls": "never",
+    
+    // Java-specific optimizations
+    "java.server.launchMode": "Standard",
+    "java.import.gradle.enabled": false,
+    "java.autobuild.enabled": false,
+    "java.maxConcurrentBuilds": 1,
+    "java.referencesCodeLens.enabled": false,
+    "java.implementationsCodeLens.enabled": false,
+    "java.signatureHelp.enabled": false,
+    "java.contentProvider.preferred": "fernflower",
+    "java.completion.enabled": true,
+    "java.completion.maxResults": 20,
+    "java.completion.favoriteStaticMembers": [],
+    
+    // Memory settings for Java Language Server
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -Xmx1G -Xms256m",
+    
+    // Disable Git integration for speed
+    "git.enabled": false,
+    "git.autorefresh": false,
+    "git.decorations.enabled": false,
+    
+    // Search optimizations
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/target": true,
+        "**/dist": true,
+        "**/.git": true,
+        "**/.gradle": true,
+        "**/.m2": true
+    },
+    
+    // File associations for faster loading
+    "files.associations": {
+        "*.java": "java"
+    },
+    
+    // Disable breadcrumbs
+    "breadcrumbs.enabled": false,
+    
+    // Disable suggestions
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    
+    // Disable word wrap for performance
+    "editor.wordWrap": "off",
+    
+    // Reduce auto-save frequency
+    "files.autoSave": "onFocusChange",
+    
+    // Terminal optimizations
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.fastScrollSensitivity": 5
+}

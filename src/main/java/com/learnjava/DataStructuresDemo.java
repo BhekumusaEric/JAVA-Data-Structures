@@ -9,7 +9,7 @@ import java.util.*;
  * Your task: Make all the unit tests pass by implementing the methods below!
  */
 public class DataStructuresDemo {
-    
+
     /**
      * Creates a frequency map of characters in a string
      * @param text the input string
@@ -18,7 +18,13 @@ public class DataStructuresDemo {
     public Map<Character, Integer> getCharacterFrequency(String text) {
         // TODO: Implement this method
         // Hint: Use HashMap<Character, Integer> and iterate through string
-        return null;
+        HashMap<Character , Integer> dict_obj = new HashMap<>();
+        for (char ch : text.toCharArray()){
+            System.out.println(ch + "   : " + dict_obj.getOrDefault(ch , 0));
+            dict_obj.put(ch , dict_obj.getOrDefault(ch, 0) + 1);
+        }
+        System.out.println(dict_obj);
+        return dict_obj;
     }
     
     /**
@@ -29,9 +35,31 @@ public class DataStructuresDemo {
     public Map<String, Integer> getWordFrequency(String sentence) {
         // TODO: Implement this method
         // Hint: Split by spaces, use HashMap<String, Integer>
-        return null;
+        HashMap<String , Integer > obj_dict = new HashMap<>();
+        String[] sentence_splited = new ArrayList<>().toArray(new String[0]);
+        StringBuilder new_sen = new StringBuilder(sentence);
+        sentence_splited = sentence.split(" ");
+        System.out.println(Arrays.toString(sentence_splited));
+        for (String word : sentence_splited){
+            System.out.println(word);
+            obj_dict.put(word , obj_dict.getOrDefault(word , 0) + 1);
+        }
+        System.out.println(obj_dict);
+        return obj_dict;
     }
-    
+
+    public static void main(String[] args) {
+        DataStructuresDemo o = new DataStructuresDemo();
+        //o.getCharacterFrequency("Ericei");
+        //o.getWordFrequency("I am eric and Being eric is amazing");
+        //o.getUniqueCharacters("Ericcciie");
+        Map<String, String> studentGrades = new HashMap<>();
+        studentGrades.put("Alice", "A");
+        studentGrades.put("Bob", "B");
+        studentGrades.put("Charlie", "A");
+        studentGrades.put("David", "B");
+        o.groupStudentsByGrade(studentGrades);
+    }
     /**
      * Finds all unique characters in a string
      * @param text the input string
@@ -40,7 +68,13 @@ public class DataStructuresDemo {
     public Set<Character> getUniqueCharacters(String text) {
         // TODO: Implement this method
         // Hint: Use HashSet<Character>
-        return null;
+        text = text.toLowerCase();
+        HashSet<Character> uniqes = new HashSet<>();
+        for(Character ch : text.toCharArray()){
+            uniqes.add(ch);
+        }
+        System.out.println(uniqes);
+        return uniqes;
     }
     
     /**
@@ -51,7 +85,16 @@ public class DataStructuresDemo {
     public Map<String, List<String>> groupStudentsByGrade(Map<String, String> studentGrades) {
         // TODO: Implement this method
         // Hint: Use HashMap<String, List<String>> and iterate through input map
-        return null;
+        HashMap<String , List<String>> obj_dic = new HashMap<>();
+
+        for (Map.Entry<String, String> entry : studentGrades.entrySet()){
+            String grade = entry.getValue();
+            String student = entry.getKey();
+            obj_dic.putIfAbsent(entry.getValue(), new ArrayList<>());
+            obj_dic.get(grade).add(student);
+            System.out.println(entry.getValue());
+        }
+        return obj_dic;
     }
     
     /**
